@@ -33,6 +33,7 @@ def binary_to_decimal(number):
             a += int(i)*(2**count)
             count +=1
     return a
+
 def decimal_to_decimal(number):
     hold = str(number)
     for i in hold:
@@ -66,7 +67,6 @@ def octal_to_decimal(number):
         count+=1
     return a
 
-
 def decimal_to_octal(number):
     hold = 0
     L = [ ]
@@ -77,7 +77,6 @@ def decimal_to_octal(number):
     L.reverse()
     change = "".join(str(x) for x in L)
     return int(change)
-
 
 def equalDec(number):
     numbers = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F']
@@ -373,8 +372,6 @@ def calc(op, num1, num2, out):
                         return sign
                 if out not in Types:
                     return "ERROR not a possible output"
-
-
 
         except:
             print("********************************************************************\n")
